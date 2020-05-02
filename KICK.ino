@@ -17,7 +17,6 @@ void setup() {
   strip.begin();           
   strip.show();            
   strip.setBrightness(250); 
-  Serial.begin(9600);
   for (int i=0; i<4; i++){
     strip.setPixelColor(i, pink); 
     strip.show(); 
