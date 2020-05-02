@@ -25,7 +25,7 @@ void setup() {
 }
 
 void loop() {
-  if (analogRead(A7)>800){
+  if (analogRead(A7)>threshold){
     for(int i=1; i<75; i++){
       strip.setPixelColor(i, 0,0,0);
       strip.show(); 
